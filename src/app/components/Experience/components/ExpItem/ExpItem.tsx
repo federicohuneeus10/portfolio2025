@@ -10,6 +10,7 @@ interface ExpItemProps {
   description: string[];
   skills: string[];
   link: string | undefined;
+  image: string;
 }
 
 export default function ExpItem({
@@ -20,6 +21,7 @@ export default function ExpItem({
   description,
   skills,
   link,
+  image,
 }: ExpItemProps) {
   return (
     <ExpItemContainer>
@@ -30,6 +32,11 @@ export default function ExpItem({
               endDate !== "" ? "- " + endDate : ""
             }`}</span>
           </div>
+          {image && (
+            <div className="img">
+              <img src={image} />
+            </div>
+          )}
         </div>
         <div className="col w-content">
           <div className="job-title-container">
@@ -46,9 +53,9 @@ export default function ExpItem({
                   aria-hidden="true"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
               </a>

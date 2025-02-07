@@ -16,6 +16,11 @@ export const ExpItemContainer = styled.div`
 
   .row.gap-0 {
     gap: 24px;
+    padding: 32px 32px;
+    border-radius: 16px;
+    &:hover {
+      background-color: rgba(23, 34, 62, 0.4);
+    }
   }
 
   .col.w-auto {
@@ -34,6 +39,14 @@ export const ExpItemContainer = styled.div`
       color: rgb(148, 163, 184);
       flex-wrap: nowrap;
       width: max-content;
+    }
+  }
+
+  .img {
+    padding-top: 24px;
+    img {
+      width: 140px;
+      height: auto;
     }
   }
 

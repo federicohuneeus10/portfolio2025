@@ -31,6 +31,7 @@ export default function Experience() {
         "Slicemachine",
       ],
       link: "https://www.riamoneytransfer.com",
+      image: "/assets/ria.png",
     },
     {
       startDate: "2023",
@@ -54,6 +55,28 @@ export default function Experience() {
         "Railway",
       ],
       link: "https://www.dogin.cl",
+      image: "/assets/dogin.png",
+    },
+    {
+      startDate: "2024",
+      endDate: "2025",
+      jobTitle: "Lead FrontEnd Engineer",
+      company: "Transmarko",
+      description: [
+        "Built from scratch website for Transmarko based on an AdobeXD design",
+      ],
+      skills: [
+        "TypeScript",
+        "React",
+        "NextJS",
+        "Git",
+        "Github",
+        "AdobeXD",
+        "Netlify",
+        "CSS",
+      ],
+      link: "https://transmarko.netlify.app",
+      image: "/assets/transmarko.png",
     },
     {
       startDate: "2021",
@@ -109,6 +132,7 @@ export default function Experience() {
             skills={wExp.skills}
             key={key}
             link={wExp.link}
+            image={wExp.image}
           />
         );
       })}
