@@ -56,6 +56,10 @@ export const ProjectsContainer = styled.div`
     }
 
     .project-container {
+      @media (max-width: 600px) {
+        padding-top: 24px;
+      }
+
       .title {
         display: flex;
         flex-direction: row;
@@ -103,6 +107,12 @@ export const ProjectsContainer = styled.div`
         gap: 16px;
         .img-container {
           padding: 24px;
+          @media (max-width: 600px) {
+            padding: 0;
+            img {
+              width: 300px;
+            }
+          }
         }
         .proj-img {
           border-radius: 10px;

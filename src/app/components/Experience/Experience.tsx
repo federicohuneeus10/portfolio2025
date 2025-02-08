@@ -4,6 +4,11 @@ import { ExperienceContainer } from "./Experience.styles";
 import ExpItem from "./components/ExpItem/ExpItem";
 
 export default function Experience() {
+  interface WExp {
+    link: string;
+    image: string; //
+  }
+
   const workExperience = [
     {
       startDate: "2022",
@@ -132,7 +137,7 @@ export default function Experience() {
             skills={wExp.skills}
             key={key}
             link={wExp.link}
-            image={wExp.image}
+            image={wExp.image || ""}
           />
         );
       })}
