@@ -12,6 +12,21 @@ export const TimelineContainer = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.hovered {
+      .line {
+        background: #fff;
+        width: 60px;
+        transition: all 0.3s ease-in-out;
+      }
+      .text {
+        color: #fff;
+      }
+    }
   }
   .line {
     background: rgb(148, 163, 184);
